@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Food Ordering System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "form-container">
+        <h2>Register</h2>
+         <form action="register.php" method="POST">
+          <label for="name">Name: </label><br>
+            <input type="text" name="name" id="name"  placeholder="Full Name" required/><br><br>
+         <label for="email">Email id: </label><br>
+            <input type="email" name="email" id="email"  placeholder="Your Email id" required/><br><br>
+             <label for="password">Password: </label><br>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required/><br><br>
+            <select name="role" required>
+                <option value="customer">Customer</option>
+                <option value="admin">Admin</option>
+</select><br><br>
+<button type="submit">Register</button>
+</form><br>
+<div class="link">Already have an account? <a href="login.html">Login here</a></div>
+</div>
+</body>
+</html>
