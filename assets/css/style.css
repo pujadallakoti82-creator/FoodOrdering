@@ -1,0 +1,95 @@
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------- BODY ---------------- */
+body {
+    background-color: #ffeae0; /* same soft background as index page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ---------------- FORM CONTAINER ---------------- */
+.form-container {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 350px;
+    animation: fadeIn 1s ease forwards; /* smooth fade-in */
+}
+
+/* FORM TITLE */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff511c; /* same accent color as index page */
+}
+
+/* INPUT FIELDS AND SELECT */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ffb299; /* subtle orange border */
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s all ease;
+}
+
+input:focus, select:focus {
+    border-color: #ff511c;
+    box-shadow: 0 0 5px rgba(255, 81, 28, 0.5); /* glowing effect */
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff511c; /* primary accent color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background: #e04300; /* darker shade on hover */
+    transform: scale(1.03); /* subtle scaling */
+}
+
+/* LINK UNDER FORM */
+.link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.link a {
+    color: #ff511c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: #e04300;
+    text-decoration: underline;
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
