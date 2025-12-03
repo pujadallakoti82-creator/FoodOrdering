@@ -24,10 +24,7 @@
 
     <div class="auth-buttons">
 
-     <!-- CART BUTTON -->
-    <button class="cart">
-        <i class="fa fa-shopping-cart"></i> Cart
-    </button>
+
 
         <button class="signin" onclick="signin()">Sign In</button>
         <button class="signup" onclick="signup()">Sign Up</button>

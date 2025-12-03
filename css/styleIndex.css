@@ -238,36 +238,6 @@ overflow-x: hidden;
 }
 
 
-/*--------cart-----------*/
-.cart-icon {
-    position: relative;
-    font-size: 22px;
-    color: #333;
-    text-decoration: none;
-}
-
-.cart-icon i {
-    font-size: 26px;
-    transition: 0.3s;
-}
-
-.cart-icon:hover i {
-    color: #ff4d4d;
-    transform: scale(1.1);
-}
-
-.cart-value {
-    position: absolute;
-    top: -8px;
-    right: -10px;
-    background: #ff4d4d;
-    color: white;
-    padding: 2px 6px;
-    font-size: 11px;
-    border-radius: 50%;
-    font-weight: bold;
-}
-
 /* CSS for Social */
 .social ul{
     list-style-type: none;
