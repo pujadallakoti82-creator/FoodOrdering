@@ -104,9 +104,11 @@
 </section>
 
 
-
+<!----footer section ----->
  <!-- social Section Starts Here -->
-    <section class="social">
+
+    <section class="footer">
+         <section class="social">
         <div class="container text-center">
             <ul>
                 <li>
@@ -122,9 +124,6 @@
         </div>
     </section>
     <!-- social Section Ends Here -->
-
-    <!-- footer Section Starts Here -->
-    <section class="footer">
         <div class="container text-center">
             <p>All rights reserved. Designed By <a href="#">FoodieUs Team</a></p>
         </div>

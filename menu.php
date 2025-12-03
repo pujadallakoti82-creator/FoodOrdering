@@ -60,7 +60,7 @@
                     <input type="hidden" name="item_id" value="1">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                  <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
            
                 </form>
             </div>
@@ -82,7 +82,7 @@
                     <input type="hidden" name="item_id" value="2">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                  <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
 
                 </form>
             </div>
@@ -104,7 +104,7 @@
                     <input type="hidden" name="item_id" value="3">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
 
                 </form>
             </div>
@@ -126,7 +126,7 @@
                     <input type="hidden" name="item_id" value="4">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                 <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
 
                 </form>
             </div>
@@ -148,7 +148,7 @@
                     <input type="hidden" name="item_id" value="5">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                 <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
 
                 </form>
             </div>
@@ -170,7 +170,7 @@
                     <input type="hidden" name="item_id" value="6">
                     <input type="number" name="quantity" value="1" min="1" style="width:60px;">
                     <button type="submit" name="add_to_cart" class="btn btn-primary">Add to Cart</button>
-                     <a href="order.html" class="price">Order Now</a>
+                  <button type="button"  onclick="window.location.href='order.html'">Order Now </button>
 
                 </form>
             </div>

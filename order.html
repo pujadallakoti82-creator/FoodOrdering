@@ -22,16 +22,6 @@
         </ul>
     </nav>
 
-    <div class="auth-buttons">
-
-     <!-- CART BUTTON -->
-    <button class="cart">
-        <i class="fa fa-shopping-cart"></i> Cart
-    </button>
-
-        <button class="signin" onclick="signin()">Sign In</button>
-        <button class="signup" onclick="signup()">Sign Up</button>
-    </div>
 </header>
 
             </div>
@@ -46,45 +36,47 @@
         <div class="container">
             
             <h2 class="text">Fill this form to confirm your order.</h2>
-
-            <form action="#" class="order">
-                <fieldset>
-                    <legend>Selected Food</legend>
+           <div class="select-food"> <!-- Yo div add gareko ani margin deko  --> 
+                <form action="#" class="order">
+                    <fieldset>
+                        <legend>Selected Food</legend>
 
                     <div class="food-menu-img">
                         <img src="image/pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
                     </div>
-    
+                    
                     <div class="food-menu-desc">
                         <h3>Pizza</h3>
                         <p class="food-price">$2.3</p>
-
+                        
                         <div class="order-label">Quantity</div>
                         <input type="number" name="qty" class="input-responsive" value="1" required>
+                    </fieldset>
+                    </form>   
+                </div>
+            </div>
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+                <div class="delivery-details"><!-- Yo div add gareko ani margin deko  --> 
+                <form action="#" class="order">
+                    <fieldset>
+                        <legend>Delivery Details</legend>
+                        <div class="order-label">Full Name</div>
+                        <input type="text" name="full-name" placeholder="E.g. Pooja Dallakoti" class="input-responsive" required>
                         
-                    </div>
+                        <div class="order-label">Phone Number</div>
+                        <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+                        
+                        <div class="order-label">Email</div>
+                        <input type="email" name="email" placeholder="E.g. hi@poojadk.com" class="input-responsive" required>
+                        
+                        <div class="order-label">Address</div>
+                        <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+                        
+                        <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                    </fieldset>
                     
-
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Delivery Details</legend>
-                    <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="E.g. Pooja Dallakoti" class="input-responsive" required>
-
-                    <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
-
-                    <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="E.g. hi@poojadk.com" class="input-responsive" required>
-
-                    <div class="order-label">Address</div>
-                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
-
-                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
-                </fieldset>
-
-            </form>
+                </form>
+            </div>
 
         </div>
     </section>
@@ -118,3 +110,4 @@
 
 </body>
 </html>
+
