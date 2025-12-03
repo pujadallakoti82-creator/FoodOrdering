@@ -212,15 +212,6 @@ body {
     transform: scale(1.05);
 }
 
-/* ---------------- FOOTER ---------------- */
-.footer {
-    padding: 20px 0;
-    background: white;
-    color: #ff511c;
-    font-weight: bold;
-    text-align: center;
-}
-
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
     .nav {
@@ -333,4 +324,38 @@ body {
 
 .text{
     text-align: center;
+}
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+    align-items: center;
+}
+
+/* ----------- FOOTER ----------- */
+.footer {
+    padding: 20px 0;
+    background: white;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.05);
+    margin-top: 40px;
+}
+
+.footer p a {
+    color: #ff511c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
 }
