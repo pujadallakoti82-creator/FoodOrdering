@@ -1,0 +1,321 @@
+/* ---------------- RESET ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffeae0;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* ---------------- HEADER / NAV ---------------- */
+.nav {
+    display: flex; /* horizontal layout */
+    justify-content: space-between; /* logo, nav links, buttons */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.nav .logo h1 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.nav .logo b {
+    color: #ff511c; /* accent color */
+}
+
+.nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav ul li a.active {
+    color: #ff511c;
+    border-bottom: 2px solid #ff511c;
+    padding-bottom: 5px;
+}
+
+/* ---------------- SIGN IN / SIGN UP BUTTONS ---------------- */
+.auth-buttons button {
+    padding: 8px 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.auth-buttons .signin {
+    background: transparent;
+    color: #000;
+    border: 2px solid #ff511c;
+}
+
+.auth-buttons .signin:hover {
+    background-color: #ff511c;
+    color: #fff;
+}
+
+.auth-buttons .signup {
+    background-color: #ff511c;
+    color: #fff;
+}
+
+.auth-buttons .signup:hover {
+    background-color: #e04300; /* darker red hover */
+}
+
+/*-------cart--------*/
+.auth-buttons .cart {
+    background-color: #ff511c;
+    color: #fff;
+}
+
+.auth-buttons .cart:hover {
+    background-color: #e04300; /* darker red hover */
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+}
+
+.cart-icon i {
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.cart-icon:hover i {
+    color: #ff4d4d;
+    transform: scale(1.1);
+}
+
+.cart-value {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #ff4d4d;
+    color: white;
+    padding: 2px 6px;
+    font-size: 11px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* ---------------- FOOD MENU SECTION ---------------- */
+.food-menu {
+    padding: 50px 0;
+    background-color: #ffeae0; /* light peach background like old style */
+}
+
+.food-menu h2 {
+    text-align: center;
+    color: #ff511c;
+    margin-bottom: 30px;
+}
+
+/* EACH FOOD CARD */
+.food-menu-box {
+    width: 48%;
+    background: white; /* card stays white */
+    margin: 1%;
+    padding: 20px;
+    float: left;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.food-menu-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.food-menu-img img {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* DESCRIPTION */
+.food-menu-desc h4 {
+    color: #ff511c;
+    font-size: 20px;
+}
+
+.food-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e04300;
+    margin: 10px 0;
+}
+
+.food-detail {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Add to cart input & button */
+.food-menu-desc input[type="number"] {
+    width: 60px;
+    padding: 7px;
+    border: 1px solid #ffb299;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.food-menu-desc button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff511c;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.food-menu-desc button:hover {
+    background: #e04300;
+    transform: scale(1.05);
+}
+
+/* ---------------- FOOTER ---------------- */
+.footer {
+    background: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    color: #ff511c;
+    font-weight: bold;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav ul {
+        gap: 12px;
+    }
+
+    .auth-buttons button {
+        margin-top: 10px;
+    }
+
+    .food-menu-box {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .food-menu-img img {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+/* ---------------- ANIMATION ---------------- */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+/* PRICE */
+.card .price {
+    font-weight: 600;
+    color: #ff511c;
+    font-size: 16px;
+}
+
+
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.text{
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1%;
+}

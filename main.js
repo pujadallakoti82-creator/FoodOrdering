@@ -5,3 +5,5 @@ function signin() {
 function signup() {
     window.location.href = "register.html";
 }
+
+
